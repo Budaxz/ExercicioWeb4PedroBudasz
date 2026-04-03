@@ -18,7 +18,7 @@ O projeto é inteiramente estático (Client-side).
 
 1. Clone o repositório para o seu ambiente local:
    ```bash
-   git clone <URL_DO_SEU_REPOSITORIO>
+   git clone <https://github.com/Budaxz/ExercicioWeb4PedroBudasz.git>
 Abra a pasta correspondente ao projeto.
 
 Execute o arquivo index.html em qualquer navegador moderno.
