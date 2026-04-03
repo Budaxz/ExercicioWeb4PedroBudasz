@@ -1,0 +1,82 @@
+:root {
+    /* Estado Normal - Livro de Alquimia */
+    --fundo-normal: #f4e8c1; 
+    --texto-normal: #2c3e50;
+    --botao-normal: #b22222;
+    
+    /* Estado Transmutado - Quebra do Tabu */
+    --fundo-transmutado: #0a0a0a;
+    --texto-transmutado: #e74c3c;
+    --botao-transmutado: #555555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo-normal);
+    color: var(--texto-normal);
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+body.transmutado {
+    background-color: var(--fundo-transmutado);
+    color: var(--texto-transmutado);
+}
+
+.container {
+    max-width: 600px;
+    padding: 40px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+/* Estilo do Botão */
+.btn-fma {
+    background-color: var(--botao-normal);
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background-color 0.8s ease;
+}
+
+.btn-fma:hover {
+    transform: scale(1.05);
+}
+
+.btn-fma:active {
+    transform: scale(0.95);
+}
+
+/* Estilo do Botão quando a página estiver transmutada */
+body.transmutado .btn-fma {
+    background-color: var(--botao-transmutado);
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.5); /* Brilho vermelho */
+}
